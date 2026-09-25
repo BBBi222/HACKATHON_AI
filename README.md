@@ -24,6 +24,7 @@ Add a material to `src/data/materials.js` with broad response properties. Shared
 - Procedural canvas panoramas with different visual treatments for cities, tensile webs, specimens, and material-scale scenes.
 - Shared material definitions and state, climate response, event intensity, composable event chains, time-scaled updates, and consequence inspection.
 - Configurable scenario loading, random world/material/climate/event combinations, and distance-based simulation LOD.
-- Responsive gateway UI, world-scale inspection views, a soft ambient-noise toggle, and browser fullscreen previews.
+- Responsive gateway UI, world-scale inspection views, and a soft ambient-noise toggle.
+- Three.js stereo WebXR scene assembly with controller teleportation, object grab/release, thumbstick movement, and world-to-fiber scale changes.
 
-The lightweight state model is designed for qualitative response and visible cause and effect, not engineering analysis. World previews are procedural canvas scenes. A stereo WebXR renderer, room-scale locomotion, hand tracking interactions, and validated physical simulation remain future extensions.
+The lightweight state model is designed for qualitative response and visible cause and effect, not engineering analysis. World previews use procedural canvas illustrations; headset entry assembles a procedural stereo 3D scene. The Three.js renderer is loaded only when a world is entered. Hand-tracking gestures, persistent experiment storage, shared multiplayer worlds, server-backed services, and validated physical simulation remain future extensions. A connected headset is needed to validate device-specific WebXR behavior.
