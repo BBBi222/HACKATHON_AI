@@ -32,22 +32,12 @@ export const worlds = [
   world('impossible', 'The Unbuilt', 'Experimental', 'An architecture from a half-remembered dream', 'Let the familiar rules run a little further than they usually do.', ['#b49bcc','#dbbd88','#778a96'], '✳', ['DREAM','IMPOSSIBLE','OPEN'], 'Soft light · 20°C', 'Unknown / living', 'Resonance', 140),
 ];
 
-export const materials = [
-  { name: 'Mixed / realistic', family: 'Composite', stiffness: 72, heat: 48 },
-  { name: 'Structural steel', family: 'Metal', stiffness: 88, heat: 84 },
-  { name: 'Reinforced concrete', family: 'Mineral', stiffness: 78, heat: 63 },
-  { name: 'Laminated glass', family: 'Mineral', stiffness: 81, heat: 42 },
-  { name: 'Cross-laminated wood', family: 'Organic', stiffness: 57, heat: 35 },
-  { name: 'Spider silk', family: 'Organic', stiffness: 46, heat: 27 },
-  { name: 'Mycelium + fiber', family: 'Organic', stiffness: 39, heat: 31 },
-  { name: 'Bone lattice', family: 'Bio-inspired', stiffness: 67, heat: 39 },
-  { name: 'Cellular composite', family: 'Synthetic', stiffness: 52, heat: 33 },
-  { name: 'Programmable matter', family: 'Experimental', stiffness: 61, heat: 51 },
-];
+export { materials } from './materials.js';
 
 export const events = [
-  'Earthquake', 'Coastal flood', 'Wildfire', 'Heat wave', 'Freeze / thaw', 'Cyclonic wind',
-  'Impact', 'Structural overload', 'Oxidation', 'Water exposure', 'Thermal shock', 'Aging', 'Vibration',
+  'Earthquake', 'Flood', 'Wildfire', 'Fire', 'Heat wave', 'Freeze', 'Freeze / thaw', 'Windstorm',
+  'Hurricane-like wind', 'Impact', 'Pressure', 'Structural overload', 'Corrosion', 'Oxidation',
+  'Water exposure', 'Thermal shock', 'Aging', 'Vibration', 'Gravity shift',
 ];
 
 export const filters = ['All worlds', 'Urban', 'Climate', 'Structure', 'Material', 'Organic', 'Laboratory', 'Experimental'];
